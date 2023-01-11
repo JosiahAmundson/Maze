@@ -1,0 +1,120 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red0\green0\blue192;\red63\green127\blue95;
+\red106\green62\blue62;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c0\c0\c75294;\csgenericrgb\c24706\c49804\c37255;
+\csgenericrgb\c41569\c24314\c24314;}
+\margl1440\margr1440\vieww25400\viewh12920\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs24 \cf2 package
+\f1\b0 \cf0  app;\
+\
+
+\f0\b \cf2 public
+\f1\b0 \cf0  
+\f0\b \cf2 class
+\f1\b0 \cf0  Node \{\
+	MazeCell \cf3 data\cf0 ; \cf4 // the item in the node\cf0 \
+	Node \cf3 next\cf0 ; \cf4 // reference to next item\cf0 \
+	Node \cf3 last\cf0 ;\
+\
+	
+\f0\b \cf2 public
+\f1\b0 \cf0  Node() \{\
+		
+\f0\b \cf2 this
+\f1\b0 \cf0 .\cf3 data\cf0  = 
+\f0\b \cf2 new
+\f1\b0 \cf0  MazeCell();\
+		
+\f0\b \cf2 this
+\f1\b0 \cf0 .\cf3 next\cf0  = 
+\f0\b \cf2 null
+\f1\b0 \cf0 ;\
+		
+\f0\b \cf2 this
+\f1\b0 \cf0 .\cf3 last\cf0  = 
+\f0\b \cf2 null
+\f1\b0 \cf0 ;\
+		\
+	\}\
+	
+\f0\b \cf2 public
+\f1\b0 \cf0  Node (MazeCell \cf5 v\cf0 ) \{\
+		
+\f0\b \cf2 this
+\f1\b0 \cf0 .\cf3 data\cf0  = \cf5 v\cf0 ;\
+		
+\f0\b \cf2 this
+\f1\b0 \cf0 .\cf3 next\cf0  = 
+\f0\b \cf2 null
+\f1\b0 \cf0 ;\
+		
+\f0\b \cf2 this
+\f1\b0 \cf0 .\cf3 last\cf0  = 
+\f0\b \cf2 null
+\f1\b0 \cf0 ;\
+	\}\
+	
+\f0\b \cf2 public
+\f1\b0 \cf0  Node (Node \cf5 n\cf0 ) \{\
+		
+\f0\b \cf2 this
+\f1\b0 \cf0 .\cf3 data\cf0  = \cf5 n\cf0 .getData();\
+		
+\f0\b \cf2 this
+\f1\b0 \cf0 .\cf3 next\cf0  = \cf5 n\cf0 .getNext();\
+	\}\
+	
+\f0\b \cf2 public
+\f1\b0 \cf0  MazeCell getData() \{\
+		
+\f0\b \cf2 return
+\f1\b0 \cf0  \cf3 data\cf0 ;\
+	\}\
+	
+\f0\b \cf2 public
+\f1\b0 \cf0  
+\f0\b \cf2 void
+\f1\b0 \cf0  setData(MazeCell \cf5 data\cf0 ) \{\
+		
+\f0\b \cf2 this
+\f1\b0 \cf0 .\cf3 data\cf0  = \cf5 data\cf0 ;\
+	\}\
+	
+\f0\b \cf2 public
+\f1\b0 \cf0  Node getNext() \{\
+		
+\f0\b \cf2 return
+\f1\b0 \cf0  \cf3 next\cf0 ;\
+	\}\
+	
+\f0\b \cf2 public
+\f1\b0 \cf0  
+\f0\b \cf2 void
+\f1\b0 \cf0  setNext(Node \cf5 next\cf0 ) \{\
+		
+\f0\b \cf2 this
+\f1\b0 \cf0 .\cf3 next\cf0  = \cf5 next\cf0 ;\
+	\}\
+	
+\f0\b \cf2 public
+\f1\b0 \cf0  Node getLast() \{\
+		
+\f0\b \cf2 return
+\f1\b0 \cf0  \cf3 last\cf0 ;\
+	\}\
+	
+\f0\b \cf2 public
+\f1\b0 \cf0  
+\f0\b \cf2 void
+\f1\b0 \cf0  setLast(Node \cf5 last\cf0 ) \{\
+		
+\f0\b \cf2 this
+\f1\b0 \cf0 .\cf3 last\cf0  = \cf5 last\cf0 ;\
+	\}\
+	\
+	\
+\}}
